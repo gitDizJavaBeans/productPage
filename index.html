@@ -9,6 +9,15 @@
   box-sizing: border-box;
 }
 
+.paragraph {
+  text-indent: 1em;
+  margin: 1em;
+}
+
+.marg{
+  margin: 1em;
+}
+
 main{
   background-color: rgb(255,255,255);
   
@@ -16,6 +25,7 @@ main{
 #header {
   display: flex;
   justify-content: center;
+  margin-top: 0.3em;
 }
  
 nav{
@@ -59,37 +69,50 @@ h2{
   font-size:140%;
 }
 #about-us{
-
+ 
 }
 #about-us > iframe {
   max-width: 560px;
   width: 100%;
   justify-content: center;
+  margin: 1em;
   
 }
-#products{
+#single{
+  text-align: center;
+}
+#large{
+  text-align: center;
+}
+#bulk{
+  text-align: center;
+}
+#packages {
+  display: flex;
+  justify-content: space-evenly;
+}
+.deals{
+  border: solid;
+  padding: 1em;
   
+}
+.deals:hover{
+  background-color: rgb(0,200,0);
 }
 #newsletter {
   padding: 2em;
   font-size: 110%;
+  text-align: center;
   
 }
 #contact{
   color: blue;
   background-color: yellow;
   text-align: center;
-}
-#contact > h2{
-  margin-bottom: ;
-}
-#contact > h3 {
-  margin-bottom: ;
-  padding-bottom: ;
+  padding: 1em;
 }
 
 </style>
-
 <!-- * comment -->
 <main>
   <header id="header">
@@ -109,24 +132,48 @@ h2{
     </nav>
     </header>
   
-  <section id="about-us">
-    <h2>About Us</h2>
-     <iframe
+  <section id="about-us" class="marg">
+    <h2>About Us</h2> 
+    
+      <h3 class="paragraph">While living in the Kootenay Valley of beautiful British Columbia it stopped making sense to feed our dog Charlie processed treats. So we went to local farms and got left over cuts from their butchered cows. Dehydrating the locally farmed beef in our own kitchen, our dog would be stargin drooling the whole preparation! Now we would like to share our homemade dog treats with you!
+      </h3>
+         <iframe
         id="video"
         height="315"
         src="https://www.youtube-nocookie.com/embed/ZsNbXeqWyGE?rel=0&amp;controls=0&amp;showinfo=0"
         frameborder=
         allowfullscreen
              ></iframe>
-          
-      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
-      </h3>
   </section>
     <br>
-    <section id="products" class="outside">
+    <section id="products" class="marg">
          <h2>Products</h2>
-      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  
+      <h3 class="paragraph">Buy 100% beef jerky dog treats that are made from locally farmed cows in Creston, BC. Prepared and packaged by hand in our own kitchen.
       </h3>
+      <div id="packages">
+        <div id="single">
+        <h4 class="deals">Single
+          <br> 100g
+          <br> $15
+        </h4>
+        </div>
+        
+        <div id="large">
+        <h4 class="deals">Large
+          <br> 500g
+          <br> $70
+        </h4>
+        </div>
+        
+        <div id="bulk">
+        <h4 class="deals">Bulk
+          <br> 1kg
+          <br> $135
+        </h4>
+        </div>
+        
+      </div>
       
     </section>
   
@@ -151,6 +198,9 @@ h2{
               
   </section>
   
+    
+  
 </main>
+
 </html>
 
