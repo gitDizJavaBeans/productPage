@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+/* * selects all elements */
+* {
+  margin: 0;
+  padding: 0, ;
+  box-sizing: border-box;
+}
+
+main{
+  background-color: rgb(255,255,255);
+  
+}
+#header {
+  display: flex;
+  justify-content: center;
+}
+ 
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  background-color: gray;
+}
+
+@media (max-width: 800px){
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+li {
+  list-style: none;
+}
+nav > ul{
+  display:flex;
+  justify-content: space-evenly;
+  
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+
+h2{
+  font-size:140%;
+}
+#about-us{
+
+}
+#about-us > iframe {
+  max-width: 560px;
+  width: 100%;
+  justify-content: center;
+  
+}
+#products{
+  
+}
+#newsletter {
+  padding: 2em;
+  font-size: 110%;
+  
+}
+#contact{
+  color: blue;
+  background-color: yellow;
+  text-align: center;
+}
+#contact > h2{
+  margin-bottom: ;
+}
+#contact > h3 {
+  margin-bottom: ;
+  padding-bottom: ;
+}
+
+</style>
+
+<!-- * comment -->
+<main>
+  <header id="header">
+    <div class="logo" id="header">
+    <img id="header-img"
+         src="https://i.imgur.com/zznnmyR.png" 
+         alt="Dog treat logo"
+         />
+    </div>
+    <nav id="nav-bar">
+            <ul>
+        <li><a class="nav-link" href="#about-us">About us</a></li>
+        <li><a class="nav-link" href="#products">Products</a></li>
+              <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                      <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+  
+  <section id="about-us">
+    <h2>About Us</h2>
+     <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/ZsNbXeqWyGE?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder=
+        allowfullscreen
+             ></iframe>
+          
+      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+      </h3>
+  </section>
+    <br>
+    <section id="products" class="outside">
+         <h2>Products</h2>
+      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+      </h3>
+      
+    </section>
+  
+  <section id="newsletter">
+    <p>Sign up for our newsletter!</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input 
+                 id="email"
+              placeholder="Enter Your Email here"
+              type="email"
+                 required
+                 />
+              <input id="submit" type="submit" value="Sign Up!" class="btn"
+                     />
+              </section>
+              <footer id="footer">
+                <section id="contact">
+                  <h2>Contact</h2>
+                    <h3>Number: 123-456-7890</h3>
+                      <h3>Email: dogtreats@email.ca</h3>
+                        
+              
+  </section>
+  
+</main>
+</html>
+
